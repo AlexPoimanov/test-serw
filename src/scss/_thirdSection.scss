@@ -1,4 +1,4 @@
-
+@use'fourthSection';
 .shop {
   justify-content: center;
   align-items: center;
@@ -122,7 +122,7 @@
 
     .flexIcons {
       display: flex;
-      justify-content: space-between;
+     gap: 25px;
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 400;
@@ -180,14 +180,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   padding-top: 160px;
   gap: 80px;
+  margin: 180px;
 
   .information {
     display: flex;
     flex-direction: column;
-    margin-left: 190px;
     gap: 10px;
+
+    h5 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #23A6F0;
+    }
 
     h2 {
       font-family: 'Montserrat';
@@ -212,13 +223,43 @@
 
   .rating {
     display: flex;
-    justify-content: center;
+    margin-top: 55px;
+    justify-content: space-evenly;
     align-items: center;
 
-     {
-      width: 130.07px;
-      height: 22.01px;
+
+    .ratingFirst {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      justify-content: center;
+      align-items: center
     }
+
+    .ratingSecond {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      justify-content: center;
+      align-items: center
+    }
+
+    .ratingThird {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      justify-content: center;
+      align-items: center
+
+
+    }
+
+    .ratedStars {
+      display: flex;
+      width: 130px;
+      height: 22px
+    }
+
 
     h4 {
       font-family: 'Montserrat';
@@ -235,13 +276,39 @@
     .iconRated {
       display: flex;
 
+
+      img {
+        height: 50px;
+      }
+
       .textAfterIcons {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items:flex-start;
+        padding-left:15px ;
+
+        h5 {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 0.2px;
+          color: #252B42;
+        }
+
+        h4 {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+          color: #23A6F0;
+        }
       }
     }
-
   }
 }
+

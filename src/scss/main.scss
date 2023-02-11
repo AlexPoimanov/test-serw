@@ -61,7 +61,7 @@
 .background img {
   height: 100%;
   width: 100%;
- object-fit: cover;
+  object-fit: cover;
 
 }
 
@@ -135,43 +135,41 @@ header {
   width: 599px;
   height: 401px;
 
-}
+  h5 {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: 0.1px;
+
+    /* primary-color */
+    color: #23A6F0;
+
+  }
+
+  h1 {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: #252B42;
 
 
-h5 {
+  }
 
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-
-  letter-spacing: 0.1px;
-
-  /* primary-color */
-  color: #23A6F0;
-
-}
-
-h1 {
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 58px;
-  line-height: 80px;
-  letter-spacing: 0.2px;
-  color: #252B42;
-
-
-}
-
-h4 {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.2px;
-  color: #737373;
+  h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #737373;
+  }
 }
