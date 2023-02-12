@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"rimraf dist && parcel serve src/index.html"
+    "start":"rimraf dist && parcel serve src/index.html",
+    "deploy":"rimraf dist && parcel deploy src/index.html"
   },
   "author": "",
   "license": "ISC",
