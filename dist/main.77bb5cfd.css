@@ -135,6 +135,9 @@
   height: 7px;
 }
 .contentMan .text ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -173,7 +176,7 @@ figure.effect-sadie figcaption > div {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 2em;
+  padding: 1em;
   width: 100%;
   opacity: 0;
   -webkit-transform: translate3d(0, 10px, 0);
@@ -185,6 +188,13 @@ figure.effect-sadie:hover figcaption > div {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+}
+
+.banner-image-block {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  color: #ff0000;
 }
 
 .shop {
@@ -257,6 +267,7 @@ figure.effect-sadie:hover figcaption > div {
   display: flex;
   gap: 10px;
   justify-content: center;
+  align-items: center;
 }
 .shop .banners h3 {
   font-family: "Montserrat";
@@ -352,6 +363,7 @@ figure.effect-sadie:hover figcaption > div {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  gap: 10px;
   width: 144px;
   height: 44px;
   font-family: "Montserrat";

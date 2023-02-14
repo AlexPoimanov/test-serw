@@ -39,7 +39,7 @@ figure.effect-sadie figcaption > div {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 2em;
+    padding: 1em;
     width: 100%;
     opacity: 0;
     -webkit-transform: translate3d(0,10px,0);
@@ -57,4 +57,12 @@ figure.effect-sadie:hover figcaption > div {
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+}
+.banner-image-block{
+    width: 40px;
+    height: 40px;
+font-size: 25px;
+color:#ff0000;
+
+
 }

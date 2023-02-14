@@ -3,3 +3,4 @@ https://www.figma.com/file/yLILAfBvEGPPBEtbvPtWQw/Course-Geek---html-website-tem
 http://programmerbook.ru/html/input/type/email/
 https://flukeout.github.io/ css игруха
 https://tympanus.net/Development/HoverEffectIdeas/
+https://fontawesome.com/icons
