@@ -1,10 +1,16 @@
 @use 'secondSection';
-@use 'thirdSection';
+@use 'shop';
 @use 'fourthSection';
 @use 'lastSection';
 
+html {
+  span, div, button, h1, h2, h3, h4, h5, ul > li {
+    font-family: 'Montserrat';
+    font-size: calc(15px + 0.390625vw);
+  }
+}
+
 .primaryButton {
-  font-family: 'Montserrat';
   padding: 15px 40px;
   display: flex;
   gap: 10px;
@@ -18,11 +24,14 @@
   background: #23A6F0;
   border-radius: 5px;
   border: none;
+  @media (max-width: 700px){
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+  }
 }
 
 .primaryName {
-
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -32,28 +41,13 @@
 }
 
 .primaryButton:hover {
-  background-color: #23B6F0
+  background-color: #23B6F0;
+  cursor: pointer;
 }
 
-
-.navigationList {
-  display: flex;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  gap: 20px;
-  text-align: center;
-  letter-spacing: 0.2px;
-
-  color: #737373;
-
-}
 
 .horizontal-gradient {
   position: absolute;
-
   top: 0;
   left: 0;
   right: 0;
@@ -78,20 +72,145 @@
   min-width: 50%;
   min-height: 50%;
   z-index: 0;
-
-
-  //    background-image: url("/images/hero-3-cover.png");
 }
 
 .navigationRight {
   display: flex;
   align-items: center;
-  gap: 40px
+  gap: 40px;
+  @media (max-width: 700px) {
+    display: none;
+  }
+
 }
 
 .mainPage {
   position: relative;
 }
+
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+  @media (max-width: 700px) {
+    padding-top: 20px;
+
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.menu {
+
+  display: flex;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  gap: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #000;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+
 
 header {
   display: flex;
@@ -112,6 +231,8 @@ header {
   }
   @media (max-width: 830px) {
     max-width: 600px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -122,7 +243,6 @@ header {
 .secondaryButton {
   border: none;
   background: transparent;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -138,17 +258,17 @@ header {
 .mainBanner {
   margin-top: 125px;
 
+  @media (max-width: 700px) {
+      margin-top: 25px;
+  }
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 35px;
-  width: 599px;
   height: 401px;
 
   h5 {
-
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -162,20 +282,19 @@ header {
   }
 
   h1 {
-
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 58px;
     line-height: 80px;
     letter-spacing: 0.2px;
     color: #252B42;
-
-
+    @media (max-width: 700px) {
+        font-size: 28px;
+        line-height: 40px;
+    }
   }
 
   h4 {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;

@@ -1,13 +1,13 @@
 .ending {
   .endingColums {
-    margin: 250px 195px;
+    margin: 250px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: left;
-    gap: 100px   ;
+    gap: 100px;
 
 
     h3 {
-      font-family: 'Montserrat';
       font-style: normal;
       font-weight: 700;
       font-size: 24px;
@@ -17,7 +17,6 @@
     }
 
     h4 {
-      font-family: 'Montserrat';
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -43,6 +42,7 @@
     }
 
     .colum {
+      flex: 1 0 160px;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -50,9 +50,9 @@
       .instagram {
         display: flex;
         gap: 20px;
-  
- font-size: 24px;
- color: #23A6F0;
+
+        font-size: 24px;
+        color: #23A6F0;
       }
 
     }
