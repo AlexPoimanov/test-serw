@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "rimraf dist && parcel serve src/index.html",
-        "deploy": "parcel build --public-url ./test-serw src/index.html -d ./../dist/InfoTsigan"
+        "deploy": "parcel build --public-url ./test-serw/InfoTsigan src/index.html -d ./../dist/InfoTsigan"
     },
     "author": "",
     "license": "ISC",
