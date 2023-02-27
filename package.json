@@ -1,0 +1,20 @@
+{
+    "name": "test-serw",
+    "version": "1.0.0",
+    "description": "[![pages-build-deployment](https://github.com/AlexPoimanov/test-serw/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/AlexPoimanov/test-serw/actions/workflows/pages/pages-build-deployment)",
+    "main": "index.js",
+    "scripts": {
+        "deployTsigan": "cd ./InfoTsigan && npm run deploy",
+        "deploySofaPlant": "cd ./SofaPlant && npm run deploy"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AlexPoimanov/test-serw.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AlexPoimanov/test-serw/issues"
+    },
+    "homepage": "https://github.com/AlexPoimanov/test-serw#readme"
+}
