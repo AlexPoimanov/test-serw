@@ -1,0 +1,136 @@
+.gradientIcons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+.gradientIcon {
+    display: flex;
+    gap: 24px;
+}
+  .gradient {
+    display: flex;
+    justify-content:left;
+    font-size: 63px;
+    background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+}
+
+.green {
+
+  margin-top: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+
+  .greenItem {
+    background: #C1D0E4;
+    border-radius: 50px;
+
+    .greenItemImage {
+      margin-top: -90px;
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        margin: 0 2px;
+        position: relative;
+        z-index: 1;
+
+      }
+
+      .greenItemShadow {
+        position: relative;
+        z-index: 0;
+        margin-top: -6px;
+        width: 82px;
+        height: 12px;
+        background: #A2A2A2;
+        filter: blur(5px);
+
+      }
+    }
+  }
+
+  .greenItemContent {
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    padding: 26px 38px;
+
+    .rating-wrapper {
+      align-self: center;
+      display: inline-flex;
+      direction: rtl !important;
+      margin-left: auto;
+      gap: 5px;
+
+      label {
+
+        color: #E1E6F6;
+        cursor: pointer;
+        display: inline-flex;
+        font-size: 1rem;
+        transition: color 0.5s;
+
+      }
+
+      svg {
+        -webkit-text-fill-color: transparent;
+        -webkit-filter: drop-shadow (4px 1px 6px rgba(198, 206, 237, 1));
+        filter: drop-shadow(5px 1px 3px rgba(198, 206, 237, 1));
+      }
+
+      input {
+        height: 100%;
+        width: 100%;
+      }
+
+      input {
+        display: none;
+      }
+
+      label:hover,
+      label:hover ~ label,
+      input:checked ~ label {
+        color: #F2C94C;
+      }
+    }
+  }
+
+  .greenText {
+    display: flex;
+    align-items: center;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #4F4F4F;
+    gap: 10px;
+  }
+
+  .dolars {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+
+      font-style: italic;
+      font-size: 30px;
+    }
+
+    &i {
+      border-radius: 50px;
+    }
+  }
+
+}

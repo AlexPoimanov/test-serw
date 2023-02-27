@@ -1,0 +1,232 @@
+// Import all of Bootstrap's CSS
+@use "secondPart.scss";
+@use "thirdPart.scss";
+@use "howToCare.scss";
+@use "endingPage.scss";
+@import "~bootstrap/scss/bootstrap";
+
+
+* {
+  .btnPrimary {
+
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+    border-radius: 50%;
+    border: none;
+    color: #FFFFFF;
+
+  }
+
+  h1 {
+    display: flex;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 82px;
+    line-height: 96px;
+    color: #FFFFFF;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  h2 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    color: #081323
+  }
+
+  h3 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000
+  }
+
+  h4 {
+    ont-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FFFFFF
+  }
+
+  h5 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #4F4F4F
+  }
+
+
+}
+
+.background {
+  position: relative;
+
+  .content {
+    height: 100vh
+  }
+}
+
+.content {
+  margin: 0 120px;
+  position: relative;
+  z-index: 2
+}
+
+.backgroundImg {
+  position: absolute;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  z-index: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+}
+
+.linealGradient {
+  position: absolute;
+  height: 208px;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)
+
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 400px;
+
+  li {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF
+  }
+}
+
+.home {
+  display: flex;
+  padding: 68px 0;
+  gap: 68px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .gradient {
+    font-weight: 600;
+    background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+}
+
+.i {
+  position: absolute;
+  font-size: 34px;
+  color: #FFFFFF;
+
+}
+
+.mainText {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  .search {
+    position: relative;
+
+    button {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+      border-radius: 50%;
+      border: none;
+      color: #FFFFFF;
+
+    }
+
+    input {
+      text-align: left;
+
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 24px 30px;
+      gap: 8px;
+      width: 463px;
+      height: 71px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid #FFFFFF;
+      backdrop-filter: blur(10px);
+      border-radius: 50px;
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      color: #FFFFFF;
+
+      &::placeholder {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #FFFFFF
+
+      }
+
+    }
+
+
+  }
+
+
+}
+
+.parent ~ .child {
+  background: red;
+  border: 5px solid #0000FF;
+  outline: 3px solid rgba(255, 0, 0, 0.5);
+}
+
+.child:hover {
+  background: #FFFFFF;
+}
+

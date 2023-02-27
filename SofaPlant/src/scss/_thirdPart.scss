@@ -1,0 +1,30 @@
+@use "myHoverEffect";
+
+.textLivingRoom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 182px;
+  justify-content: center;
+  align-items: center
+}
+
+.livingRoom {
+  position: relative;
+  margin-top: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  .collumImgText {
+    @extend %hover-effect
+  }
+
+
+  .collumImg {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+  }
+}
